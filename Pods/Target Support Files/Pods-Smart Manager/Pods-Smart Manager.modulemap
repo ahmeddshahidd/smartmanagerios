@@ -1,0 +1,6 @@
+framework module Pods_Smart_Manager {
+  umbrella header "Pods-Smart Manager-umbrella.h"
+
+  export *
+  module * { export * }
+}

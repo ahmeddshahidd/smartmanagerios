@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.2.0)
+  - DropDown (2)
+  - Fabric (1.6.12)
+  - IQKeyboardManagerSwift (4.0.7)
+  - Realm (2.8.3):
+    - Realm/Headers (= 2.8.3)
+  - Realm/Headers (2.8.3)
+  - RealmSwift (2.8.3):
+    - Realm (= 2.8.3)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SwiftWebVC (0.4.0)
+  - SwiftyJSON (3.1.3)
+
+DEPENDENCIES:
+  - Alamofire (= 4.2.0)
+  - DropDown
+  - Fabric
+  - IQKeyboardManagerSwift (= 4.0.7)
+  - RealmSwift
+  - SDWebImage (= 3.8.2)
+  - SwiftWebVC
+  - SwiftyJSON (= 3.1.3)
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  Fabric: f050464eac45a2ce5a8e6e6a07e977c0df32fe28
+  IQKeyboardManagerSwift: 58bbcf46b5cf9fd4ed625d28a60cb2fbae4ab0f4
+  Realm: 3601ef091c8c499a31101d8563b991e75546cdce
+  RealmSwift: 8183818515471b01a99abdd2970f8e4fd52b6f4a
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SwiftWebVC: 3fa9e5a4ce7a28ad0402ad0374210c87ce03d821
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
+
+PODFILE CHECKSUM: ec4a8f038017d224d95b90c11aaaf5cffb10832c
+
+COCOAPODS: 1.2.1

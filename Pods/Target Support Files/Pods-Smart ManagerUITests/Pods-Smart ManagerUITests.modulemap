@@ -1,0 +1,6 @@
+framework module Pods_Smart_ManagerUITests {
+  umbrella header "Pods-Smart ManagerUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
