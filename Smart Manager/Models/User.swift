@@ -10,17 +10,14 @@ import UIKit
 import RealmSwift
 
 class User: Object {
-
-    dynamic var _token = ""
-    dynamic var company_name = "";
+    
+//    dynamic var token
+    
     dynamic var email = ""
-    dynamic var first_name = ""
-    dynamic var full_name = ""
-    dynamic var last_name = ""
-    dynamic var mobile_no = ""
+    dynamic var name = ""
     dynamic var phone = ""
-    dynamic var state = ""
-    dynamic var user_id = 0
+    dynamic var type = ""
+    dynamic var user_id = ""
     
     
     override static func primaryKey() -> String? {

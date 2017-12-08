@@ -12,6 +12,8 @@ import RealmSwift
 //import Crashlytics
 //import CocoaLumberjack
 import IQKeyboardManagerSwift
+import Firebase
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -22,6 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        Fabric.with([Crashlytics.self()])
 //        DDLog.add(DDTTYLogger.sharedInstance) // TTY = Xcode console
 //        DDLog.add(DDASLLogger.sharedInstance) // ASL = Apple System Logs
+        
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+        
+        
         IQKeyboardManager.sharedManager().enable = true
         
         return true
@@ -52,29 +59,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-    func changeRootViewController(withHome: Bool)
+    func changeRootViewController()
     {
         
-        if withHome { //AppStateManager.sharedInstance.isUserLoggedIn() == false {
-            
+        if AppStateManager.sharedInstance.isUserLoggedIn(){
             //if you are calling your navigation controller then you can use this syntex
             
-            let mainTabBarController = AppStoryboard.Main.instance
-                .instantiateViewController(withIdentifier: "MainTabBarController")
+            let HomeController = AppStoryboard.Main.instance.instantiateViewController(withIdentifier: "HomeController")
+
             
             self.window?.rootViewController = nil;
-            
-            //let sideMenuController:SideMenuController = AppStoryboard.Home.instance.instantiateViewController(withIdentifier: "SideMenuController") as! SideMenuController
-            
-            
-           // let slideMenuController = SlideMenuController(mainViewController: mainTabBarController, leftMenuViewController: UIViewController(), rightMenuViewController: sideMenuController)
-            
-//            UIView.transition(with: self.window!, duration: 1.0, options: .transitionFlipFromLeft, animations: {
-//                            }, completion: nil)
-
-            self.window?.rootViewController = mainTabBarController
+            self.window?.rootViewController = HomeController
             self.window?.makeKeyAndVisible()
-
             
         }
         else
@@ -86,6 +82,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func changeRootViewControllerToProject()
+    {
+        let mainTabBarController = AppStoryboard.Main.instance.instantiateViewController(withIdentifier: "MainTabBarController")
+        
+        self.window?.rootViewController = nil;
+        self.window?.rootViewController = mainTabBarController
+        self.window?.makeKeyAndVisible()
+    }
     
 }
 

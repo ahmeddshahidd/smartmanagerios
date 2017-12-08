@@ -71,7 +71,7 @@ extension HomeController: UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        Constants.APP_DELEGATE.changeRootViewController(withHome: true)
+        Constants.APP_DELEGATE.changeRootViewControllerToProject()
     }
 }
 

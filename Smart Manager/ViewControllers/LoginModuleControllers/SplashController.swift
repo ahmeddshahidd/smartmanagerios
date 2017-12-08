@@ -28,7 +28,7 @@ class SplashController: UIViewController {
             self.imageViewSplash.image = image
         }) { (Bool) in
             let appDelegate = UIApplication.shared.delegate as! AppDelegate
-            appDelegate.changeRootViewController(withHome: false)
+            appDelegate.changeRootViewController()
            
         };
 }

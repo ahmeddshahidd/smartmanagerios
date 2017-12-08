@@ -11,11 +11,14 @@
 		0D2F63771FAADDE700899FBB /* ReceiverMessegesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F63761FAADDE700899FBB /* ReceiverMessegesCell.swift */; };
 		0D2F637A1FAADE2000899FBB /* NotificationNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F63781FAADE2000899FBB /* NotificationNewCell.swift */; };
 		0D2F637B1FAADE2000899FBB /* NotificationNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2F63791FAADE2000899FBB /* NotificationNewCell.xib */; };
+		0D5602541FD52C32005F88E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D5602531FD52C32005F88E7 /* GoogleService-Info.plist */; };
 		0D724A731FAAE60F00C1A36D /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D724A721FAAE60F00C1A36D /* SettingController.swift */; };
 		0D753AB51FA9849C004E38E7 /* AnnouncementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D753AB41FA9849C004E38E7 /* AnnouncementController.swift */; };
 		0D753AC11FA98F05004E38E7 /* GroupChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D753AC01FA98F05004E38E7 /* GroupChatController.swift */; };
 		0D8A41691FA8379300AB9ACC /* HomeProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8A41681FA8379300AB9ACC /* HomeProjectCell.swift */; };
 		0D8A416B1FA83C6400AB9ACC /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8A416A1FA83C6400AB9ACC /* UIColor+Extension.swift */; };
+		0DC7BB291FDA725A002F7A7A /* Firebase_Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC7BB281FDA725A002F7A7A /* Firebase_Authentication.swift */; };
+		0DE680851FDA652E003D0868 /* FirebaseConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE680841FDA652E003D0868 /* FirebaseConstants.swift */; };
 		15B05732FC034ADA17E8FF82 /* Pods_TemplateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B1B5A4C86FCBA7DC57BBFD9 /* Pods_TemplateUITests.framework */; };
 		1A472B1D1E1A5B3A00F3087C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A472B1B1E1A5B3A00F3087C /* Main.storyboard */; };
 		1A472B1F1E1A5B3A00F3087C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A472B1E1E1A5B3A00F3087C /* Assets.xcassets */; };
@@ -87,11 +90,15 @@
 		0D2F63761FAADDE700899FBB /* ReceiverMessegesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverMessegesCell.swift; sourceTree = "<group>"; };
 		0D2F63781FAADE2000899FBB /* NotificationNewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNewCell.swift; sourceTree = "<group>"; };
 		0D2F63791FAADE2000899FBB /* NotificationNewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationNewCell.xib; sourceTree = "<group>"; };
+		0D5602531FD52C32005F88E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0D5602551FD52D5D005F88E7 /* Smart Manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smart Manager.entitlements"; sourceTree = "<group>"; };
 		0D724A721FAAE60F00C1A36D /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		0D753AB41FA9849C004E38E7 /* AnnouncementController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementController.swift; sourceTree = "<group>"; };
 		0D753AC01FA98F05004E38E7 /* GroupChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatController.swift; sourceTree = "<group>"; };
 		0D8A41681FA8379300AB9ACC /* HomeProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeProjectCell.swift; sourceTree = "<group>"; };
 		0D8A416A1FA83C6400AB9ACC /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		0DC7BB281FDA725A002F7A7A /* Firebase_Authentication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Firebase_Authentication.swift; sourceTree = "<group>"; };
+		0DE680841FDA652E003D0868 /* FirebaseConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseConstants.swift; sourceTree = "<group>"; };
 		119A34DD92E47487AE37F01F /* Pods-Smart ManagerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Smart ManagerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Smart ManagerUITests/Pods-Smart ManagerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		12FD85B65A8310D339C1A78F /* Pods_TemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A472B141E1A5B3900F3087C /* Smart Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +249,14 @@
 			name = HomeCell;
 			sourceTree = "<group>";
 		};
+		0DC7BB271FDA722D002F7A7A /* FirebaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				0DC7BB281FDA725A002F7A7A /* Firebase_Authentication.swift */,
+			);
+			name = FirebaseModel;
+			sourceTree = "<group>";
+		};
 		1A472B0B1E1A5B3700F3087C = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +282,8 @@
 		1A472B161E1A5B3900F3087C /* Smart Manager */ = {
 			isa = PBXGroup;
 			children = (
+				0D5602551FD52D5D005F88E7 /* Smart Manager.entitlements */,
+				0D5602531FD52C32005F88E7 /* GoogleService-Info.plist */,
 				1A472B741E1A75B400F3087C /* Appdelegate */,
 				1A472BB31E1A7B9100F3087C /* ThirdPartyControls */,
 				1A472B751E1A75B400F3087C /* CustomCell */,
@@ -274,6 +291,7 @@
 				1A472B801E1A75B400F3087C /* HelperClasses */,
 				C37F719F1E1D7B7700A641B1 /* Models */,
 				1A472B861E1A75B400F3087C /* Resources */,
+				0DC7BB271FDA722D002F7A7A /* FirebaseModel */,
 				1A472B8B1E1A75B400F3087C /* ServiceModel */,
 				1A472B8C1E1A75B400F3087C /* Storyboards */,
 				1A472B8D1E1A75B400F3087C /* ViewControllers */,
@@ -398,6 +416,7 @@
 			children = (
 				1A472BA51E1A799F00F3087C /* Constants.swift */,
 				1A472BA31E1A799000F3087C /* AppConstants.swift */,
+				0DE680841FDA652E003D0868 /* FirebaseConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -724,6 +743,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					1A472B271E1A5B3B00F3087C = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -766,6 +790,7 @@
 			files = (
 				1A472BAE1E1A7ACC00F3087C /* LoginModule.storyboard in Resources */,
 				0D2F637B1FAADE2000899FBB /* NotificationNewCell.xib in Resources */,
+				0D5602541FD52C32005F88E7 /* GoogleService-Info.plist in Resources */,
 				1A472BB01E1A7AF000F3087C /* Home.storyboard in Resources */,
 				1A472B221E1A5B3A00F3087C /* LaunchScreen.storyboard in Resources */,
 				5926A9971E1E4A97007CCBD9 /* Settings.storyboard in Resources */,
@@ -848,7 +873,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" 737e3c303e65c4f916fb62eb55603ad006512f59 d3c7ad33d2cf4a109cc2e95a78f41968206e47927bb95d074925e7e72846a896";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" ca0d6df2dfb553878d34de830503aa463df3a9a9 6ea42740e1083774f8dd753b5cb881b08ab2f7dcc03c433feadd3830b9a15712";
 		};
 		49582FA147B505B1A7D14DD5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -958,6 +983,7 @@
 				964494A81E7D6B740096B74D /* PBJHexagonFlowLayout.m in Sources */,
 				1A472B971E1A770100F3087C /* SignInController.swift in Sources */,
 				1A472BA81E1A7A7800F3087C /* Utility.swift in Sources */,
+				0DC7BB291FDA725A002F7A7A /* Firebase_Authentication.swift in Sources */,
 				964494951E7AEE180096B74D /* EATextField.swift in Sources */,
 				C37F719C1E1D7A4C00A641B1 /* AuthenticationAPIManager.swift in Sources */,
 				1A472B941E1A768500F3087C /* BaseController.swift in Sources */,
@@ -965,6 +991,7 @@
 				0D2F63751FAADDCC00899FBB /* SenderMessagesCell.swift in Sources */,
 				1A472BB21E1A7B4A00F3087C /* Validation.swift in Sources */,
 				0D8A416B1FA83C6400AB9ACC /* UIColor+Extension.swift in Sources */,
+				0DE680851FDA652E003D0868 /* FirebaseConstants.swift in Sources */,
 				9642D67F1E7FE4450089F131 /* AboutViewController.swift in Sources */,
 				C37F719E1E1D7B3500A641B1 /* AppStateManager.swift in Sources */,
 				0D8A41691FA8379300AB9ACC /* HomeProjectCell.swift in Sources */,
@@ -1142,6 +1169,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Smart Manager/Smart Manager.entitlements";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Smart Manager/Info.plist";
@@ -1163,6 +1191,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "Smart Manager/Smart Manager.entitlements";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/Smart Manager/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

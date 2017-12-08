@@ -22,7 +22,7 @@ class APIManager: NSObject {
     var serverToken: String? {
         get{
             
-           return AppStateManager.sharedInstance.loggedInUser._token
+           return ""//AppStateManager.sharedInstance.loggedInUser._token
         }
         
     }

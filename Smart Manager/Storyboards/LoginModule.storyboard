@@ -151,6 +151,10 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="emailAddressTextField" destination="bbO-AM-CeP" id="stS-wD-7g9"/>
+                        <outlet property="passwordTextField" destination="Xc8-qk-A1r" id="Zmn-at-1bp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYU-dh-YLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -882,6 +886,9 @@
                                 <rect key="frame" x="26" y="415.5" width="323" height="53"/>
                                 <color key="backgroundColor" red="0.31767731904983521" green="0.75241988897323608" blue="0.87066251039505005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Sign Up" backgroundImage="signupBtnBG"/>
+                                <connections>
+                                    <action selector="signUpBtnPress:" destination="dwT-vX-pNm" eventType="touchUpInside" id="cyi-Lc-9D1"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JfQ-vr-eVg">
                                 <rect key="frame" x="26" y="488.5" width="323" height="1"/>
@@ -920,6 +927,12 @@
                             <constraint firstItem="ZQb-zD-w1q" firstAttribute="height" secondItem="D6p-fg-d2O" secondAttribute="height" id="yr6-80-2OA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailEAField" destination="KMb-6b-Sat" id="e4X-3u-F3W"/>
+                        <outlet property="nameEAField" destination="P0I-e3-aGe" id="sYE-bv-2Yn"/>
+                        <outlet property="passwordEAField" destination="242-5R-LHa" id="PMe-By-nhH"/>
+                        <outlet property="phoneEAField" destination="D6p-fg-d2O" id="ZaX-sm-p3V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J5H-xV-7b4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

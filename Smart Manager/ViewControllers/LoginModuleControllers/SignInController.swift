@@ -12,6 +12,10 @@ import RealmSwift
 //import CocoaLumberjack
 class SignInController: BaseController {
 
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var emailAddressTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,51 +53,18 @@ class SignInController: BaseController {
     }
     
    @IBAction func processSignInRequest(){
+    
+    Firebase_Authentication.sharedInstance.SignInUser(with: self.emailAddressTextField.text!, password: self.passwordTextField.text!, success: {
+        (success) in
         
-//        let successClosure: DefaultArrayResultAPISuccessClosure = {
-//            (result) in
-//           
-//            AppStateManager.sharedInstance.loggedInUser = User(value: result["Result"] as! NSDictionary)
-//            
-//          //  DDLogInfo(AppStateManager.sharedInstance.loggedInUser._token)
-//            
-//            try! Global.APP_REALM?.write(){
-//                Global.APP_REALM?.add(AppStateManager.sharedInstance.loggedInUser, update: true)
-//            }
-//            
-//            if (AppStateManager.sharedInstance.loggedInUser.user_id) > 0{
-//                
-//          //      DDLogInfo("User Logged In with Token \(AppStateManager.sharedInstance.loggedInUser?._token) ")
-//                
-//            
-//                Constants.APP_DELEGATE.changeRootViewController()
-//            }
-//            
-//        }
-//    
-//        APIManager.sharedInstance.authenticateUserWith(email: "asad@one.com", password: "asadrehman", success: successClosure) { (error) in
-//            print (error)
-//        }
-// 
-//    
-//    Constants.APP_DELEGATE.changeRootViewController()
-
-    /*
-    let homeNavigation = AppStoryboard.Home.instance
-        .instantiateViewController(withIdentifier: "HomeControllerNavigation")
-    
-    let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    appDelegate.window?.rootViewController = nil;
-    
-    
-    UIView.transition(with: appDelegate.window!, duration: 1.0, options: .transitionFlipFromLeft, animations: {
-        appDelegate.window?.rootViewController = homeNavigation
-    }, completion: nil)
-    */
-    
-    let homeComtroller = AppStoryboard.Main.instance.instantiateViewController(withIdentifier: "HomeController")
-    self.navigationController?.pushViewController(homeComtroller, animated: true)
-    
+        if(success)
+        {
+            Constants.APP_DELEGATE.changeRootViewController()
+        }
+        
+    }, failure: {
+        (error) in
+    })
     }
     
     @IBAction func skipButtonTapped(_ sender: UIButton) {

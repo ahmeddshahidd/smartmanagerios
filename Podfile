@@ -11,6 +11,10 @@ target 'Smart Manager' do
     pod 'SwiftyJSON', '3.1.3'
     pod 'RealmSwift'
     #pod 'CocoaLumberjack/Swift'
+    
+    pod 'Firebase'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Database'
   # Pods for Template
   
   
