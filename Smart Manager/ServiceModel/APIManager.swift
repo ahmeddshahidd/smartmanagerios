@@ -4,7 +4,8 @@ import UIKit
 typealias DefaultAPIFailureClosure = (NSError) -> Void
 typealias DefaultAPISuccessClosure = (Dictionary<String,AnyObject>) -> Void
 typealias DefaultBoolResultAPISuccesClosure = (Bool) -> Void
-typealias DefaultArrayResultAPISuccessClosure = (Dictionary<String,AnyObject>) -> Void
+typealias DefaultDictionaryResultAPISuccesClosure = (Dictionary<String,Any>) -> Void
+typealias DefaultArrayResultAPISuccessClosure = (NSArray) -> Void
 
 
 protocol APIErrorHandler {

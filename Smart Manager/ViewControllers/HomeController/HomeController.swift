@@ -74,11 +74,6 @@ extension HomeController: UITableViewDelegate
         Constants.APP_DELEGATE.changeRootViewControllerToProject()
     }
 }
-
-
-
-
-
 //extension HomeController : SlideMenuControllerDelegate {
 //    
 //    func leftWillOpen() {

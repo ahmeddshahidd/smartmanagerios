@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 import AVFoundation
+import NVActivityIndicatorView
+
 class Utility {
     
     func roundAndFormatFloat(floatToReturn : Float, numDecimalPlaces: Int) -> String{
@@ -97,5 +99,20 @@ class Utility {
    static func delay(delay:Double, closure:@escaping ()->()) {
         DispatchQueue.main.asyncAfter(
             deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
+    }
+    
+    
+    static func showLoader() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        let size = CGSize(width: 50, height: 50)
+        let bgColor = UIColor(colorLiteralRed: 0, green: 0, blue: 0, alpha: 0.5)
+        let activityData = ActivityData(size: size, message: "", messageFont: UIFont.systemFont(ofSize: 12), type: .ballClipRotate, color: .white , padding: 0, displayTimeThreshold: 0, minimumDisplayTime: 1, backgroundColor: bgColor, textColor: UIColor.black)
+        
+        NVActivityIndicatorPresenter.sharedInstance.startAnimating(activityData)
+    }
+    
+    static func hideLoader() {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        NVActivityIndicatorPresenter.sharedInstance.stopAnimating()
     }
 }

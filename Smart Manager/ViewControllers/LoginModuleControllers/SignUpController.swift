@@ -37,12 +37,12 @@ class SignUpController: BaseController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func signUpBtnPress(_ sender: Any) {
+        
+        Utility.showLoader()
         Auth.auth().createUser(withEmail: self.emailEAField.textfield.text!,
                                password: self.passwordEAField.textfield.text!) { user, error in
                                 if error == nil {
-                                    // 3
-                                    //                                        Auth.auth().signIn(withEmail: self.emailEAField.textfield.text!,
-                                    //                                                               password: self.passwordEAField.textfield.text!)
+                                    
                                     Auth.auth().signIn(withEmail: self.emailEAField.textfield.text!, password: self.passwordEAField.textfield.text!, completion: {
                                         (userSignIn, errorSignIn) in
                                         
@@ -67,6 +67,7 @@ class SignUpController: BaseController {
                                             }
                                             
                                         }
+                                        Utility.hideLoader()
                                         
                                     })
                                     

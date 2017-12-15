@@ -87,7 +87,7 @@ class APIManagerBase: NSObject {
                     
                                 self.responseResult(response, success: {result in
                     
-                                    success(result as! Dictionary<String, AnyObject>)
+                                    success(result as! NSArray)
                                 }, failure: {error in
                     
                                     failure(error)
@@ -108,7 +108,7 @@ class APIManagerBase: NSObject {
             
             self.responseResult(response, success: {response in
             
-                success(response as! Dictionary<String, AnyObject>)
+                success(response as! NSArray)
             }, failure: {error in
             
                 failure(error as NSError)
@@ -125,7 +125,7 @@ class APIManagerBase: NSObject {
             
             self.responseResult(response, success: {response in
                 
-                success(response as! Dictionary<String, AnyObject>)
+                success(response as! NSArray)
             }, failure: {error in
                 
                 failure(error as NSError)
@@ -144,7 +144,7 @@ class APIManagerBase: NSObject {
             
             self.responseResult(response, success: {response in
                 
-                success(response as! Dictionary<String, AnyObject>)
+                success(response as!NSArray)
             }, failure: {error in
                 
                 failure(error as NSError)
@@ -161,7 +161,7 @@ class APIManagerBase: NSObject {
             
             self.responseResult(response, success: {response in
                 
-                success(response as! Dictionary<String, AnyObject>)
+                success(response as! NSArray)
             }, failure: {error in
                 
                 failure(error as NSError)

@@ -11,32 +11,32 @@ import UIKit
 import RealmSwift
 //import CocoaLumberjack
 class SignInController: BaseController {
-
+    
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBOutlet weak var emailAddressTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-      //for checking Crashlytic
+        
+        //for checking Crashlytic
         
         /* let button = UIButton(type: UIButtonType.roundedRect)
-        button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
-        button.setTitle("Crash", for: .normal)
-        button.addTarget(self, action: #selector(crashButtonTapped(sender:)), for: .touchUpInside)
-        view.addSubview(button)
-*/
+         button.frame = CGRect(x: 20, y: 50, width: 100, height: 30)
+         button.setTitle("Crash", for: .normal)
+         button.addTarget(self, action: #selector(crashButtonTapped(sender:)), for: .touchUpInside)
+         view.addSubview(button)
+         */
         // Do any additional setup after loading the view.
         
         //self.title = "Sign In"
-       
-
+        
+        
     }
-//    @IBAction func crashButtonTapped(sender: AnyObject) {
-//        Crashlytics.sharedInstance().crash()
-//    }
-
+    //    @IBAction func crashButtonTapped(sender: AnyObject) {
+    //        Crashlytics.sharedInstance().crash()
+    //    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -44,7 +44,7 @@ class SignInController: BaseController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-         self.navigationController?.navigationBar.isHidden = true
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -52,19 +52,28 @@ class SignInController: BaseController {
         self.navigationController?.navigationBar.isHidden = false
     }
     
-   @IBAction func processSignInRequest(){
-    
-    Firebase_Authentication.sharedInstance.SignInUser(with: self.emailAddressTextField.text!, password: self.passwordTextField.text!, success: {
-        (success) in
+    @IBAction func processSignInRequest(){
         
-        if(success)
-        {
-            Constants.APP_DELEGATE.changeRootViewController()
-        }
-        
-    }, failure: {
-        (error) in
-    })
+        Utility.showLoader()
+        Firebase_Authentication.sharedInstance.SignInUser(with: self.emailAddressTextField.text!, password: self.passwordTextField.text!, success: {
+            (success) in
+            
+            let user = User(value: success)
+            
+            AppStateManager.sharedInstance.loggedInUser = user
+            
+            try! Global.APP_REALM?.write(){
+                Global.APP_REALM?.add(AppStateManager.sharedInstance.loggedInUser, update: true)
+            }
+            print(AppStateManager.sharedInstance.loggedInUser)
+            
+            if !AppStateManager.sharedInstance.loggedInUser.user_id.isEmpty {
+                Constants.APP_DELEGATE.changeRootViewController()
+            }
+            Utility.hideLoader()
+        }, failure: {
+            (error) in
+        })
     }
     
     @IBAction func skipButtonTapped(_ sender: UIButton) {
@@ -73,15 +82,15 @@ class SignInController: BaseController {
         
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

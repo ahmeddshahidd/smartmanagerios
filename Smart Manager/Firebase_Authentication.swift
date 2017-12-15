@@ -18,7 +18,7 @@ class  Firebase_Authentication: NSObject {
         super.init()
     }
     
-    func SignInUser(with email: String, password: String, success:@escaping DefaultBoolResultAPISuccesClosure,
+    func SignInUser(with email: String, password: String, success:@escaping DefaultDictionaryResultAPISuccesClosure,
                     failure:@escaping DefaultAPIFailureClosure )
     {
         Auth.auth().signIn(withEmail: email, password: password, completion: {
@@ -27,7 +27,19 @@ class  Firebase_Authentication: NSObject {
             if error == nil
             {
                 print("Sign In Done!")
-                success(true)
+                let refr = FirebaseConstantas.ref.child("users").child((user?.uid)!)
+                print(refr)
+                refr.observe(.value, with: {
+                    snapshot in
+                    if snapshot.exists()
+                    {
+                        var userInfoModel = snapshot.value as! [String : Any]
+                        userInfoModel["user_id"] = user?.uid
+                        success(userInfoModel)
+                    }
+                    
+                    
+                })
             }
             else
             {
