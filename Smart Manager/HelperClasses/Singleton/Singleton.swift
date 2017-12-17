@@ -17,4 +17,6 @@ class Singleton {
     var deviceId:String = ""
     var selectedDate: [Date] = []
     
+    var currentProject: Project!
+    
 }

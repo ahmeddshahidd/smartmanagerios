@@ -14,7 +14,9 @@ class SplashController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.animateImages()
+      //  self.animateImages()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.changeRootViewController()
         
         // Do any additional setup after loading the view.
     }

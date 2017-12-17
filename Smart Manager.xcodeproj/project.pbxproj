@@ -43,6 +43,10 @@
 		1A472BB21E1A7B4A00F3087C /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A472BB11E1A7B4A00F3087C /* Validation.swift */; };
 		1A67AFBB1E1B7D1C004FE57D /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A67AFBA1E1B7D1C004FE57D /* BaseNavigationController.swift */; };
 		4B29EDC06880161A21D5B0D1 /* Pods_TemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FD85B65A8310D339C1A78F /* Pods_TemplateTests.framework */; };
+		5124B3C11FE67CF400213D2F /* ParserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124B3C01FE67CF400213D2F /* ParserHelper.swift */; };
+		5124B3C31FE6879E00213D2F /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124B3C21FE6879E00213D2F /* Project.swift */; };
+		5124B3C51FE69A1E00213D2F /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5124B3C41FE69A1E00213D2F /* Notification.swift */; };
+		51D1F1E41FE677AF007AF6FE /* Firebase_Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D1F1E31FE677AF007AF6FE /* Firebase_Project.swift */; };
 		5926A98F1E1E490D007CCBD9 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926A98E1E1E490D007CCBD9 /* HomeController.swift */; };
 		5926A9911E1E4923007CCBD9 /* SplashController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926A9901E1E4923007CCBD9 /* SplashController.swift */; };
 		5926A9931E1E493A007CCBD9 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5926A9921E1E493A007CCBD9 /* SettingsController.swift */; };
@@ -137,6 +141,10 @@
 		4ACE64F4D6F0F8D7E7CA4720 /* Pods_Smart_Manager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Smart_Manager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1B5A4C86FCBA7DC57BBFD9 /* Pods_TemplateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TemplateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		503F5A158F6E833B44519F0A /* Pods-Template.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Template.release.xcconfig"; path = "Pods/Target Support Files/Pods-Template/Pods-Template.release.xcconfig"; sourceTree = "<group>"; };
+		5124B3C01FE67CF400213D2F /* ParserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParserHelper.swift; sourceTree = "<group>"; };
+		5124B3C21FE6879E00213D2F /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		5124B3C41FE69A1E00213D2F /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		51D1F1E31FE677AF007AF6FE /* Firebase_Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Project.swift; sourceTree = "<group>"; };
 		5926A98E1E1E490D007CCBD9 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		5926A9901E1E4923007CCBD9 /* SplashController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashController.swift; sourceTree = "<group>"; };
 		5926A9921E1E493A007CCBD9 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
@@ -253,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				0DC7BB281FDA725A002F7A7A /* Firebase_Authentication.swift */,
+				51D1F1E31FE677AF007AF6FE /* Firebase_Project.swift */,
 			);
 			name = FirebaseModel;
 			sourceTree = "<group>";
@@ -401,6 +410,7 @@
 		1A472B801E1A75B400F3087C /* HelperClasses */ = {
 			isa = PBXGroup;
 			children = (
+				5124B3BF1FE67CC100213D2F /* ParserHelper */,
 				1A472BA01E1A796600F3087C /* Singleton */,
 				1A472B811E1A75B400F3087C /* Constants */,
 				1A472B821E1A75B400F3087C /* Enums */,
@@ -569,6 +579,14 @@
 			path = ../ThirdPartyControls;
 			sourceTree = "<group>";
 		};
+		5124B3BF1FE67CC100213D2F /* ParserHelper */ = {
+			isa = PBXGroup;
+			children = (
+				5124B3C01FE67CF400213D2F /* ParserHelper.swift */,
+			);
+			path = ParserHelper;
+			sourceTree = "<group>";
+		};
 		56021EA19EA890D26FDDD043 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -659,6 +677,8 @@
 			isa = PBXGroup;
 			children = (
 				C37F71A01E1D7B8100A641B1 /* User.swift */,
+				5124B3C21FE6879E00213D2F /* Project.swift */,
+				5124B3C41FE69A1E00213D2F /* Notification.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -977,11 +997,14 @@
 				C37F719A1E1D7A4C00A641B1 /* APIManager.swift in Sources */,
 				1A472B9B1E1A772000F3087C /* ForgotPasswordController.swift in Sources */,
 				5926A98F1E1E490D007CCBD9 /* HomeController.swift in Sources */,
+				5124B3C51FE69A1E00213D2F /* Notification.swift in Sources */,
 				1A472BA41E1A799000F3087C /* AppConstants.swift in Sources */,
 				96A07B2B1E7D91020032979E /* SideMenuTableViewCell.swift in Sources */,
 				0D753AB51FA9849C004E38E7 /* AnnouncementController.swift in Sources */,
 				964494A81E7D6B740096B74D /* PBJHexagonFlowLayout.m in Sources */,
+				51D1F1E41FE677AF007AF6FE /* Firebase_Project.swift in Sources */,
 				1A472B971E1A770100F3087C /* SignInController.swift in Sources */,
+				5124B3C11FE67CF400213D2F /* ParserHelper.swift in Sources */,
 				1A472BA81E1A7A7800F3087C /* Utility.swift in Sources */,
 				0DC7BB291FDA725A002F7A7A /* Firebase_Authentication.swift in Sources */,
 				964494951E7AEE180096B74D /* EATextField.swift in Sources */,
@@ -1007,6 +1030,7 @@
 				1A67AFBB1E1B7D1C004FE57D /* BaseNavigationController.swift in Sources */,
 				1A472BAC1E1A7A9C00F3087C /* UIView+Extention.swift in Sources */,
 				1A472BA61E1A799F00F3087C /* Constants.swift in Sources */,
+				5124B3C31FE6879E00213D2F /* Project.swift in Sources */,
 				1A472B9D1E1A792900F3087C /* Enums.swift in Sources */,
 				C37F71991E1D7A4C00A641B1 /* APIManager_Authentication.swift in Sources */,
 				1A472BA21E1A796C00F3087C /* Singleton.swift in Sources */,

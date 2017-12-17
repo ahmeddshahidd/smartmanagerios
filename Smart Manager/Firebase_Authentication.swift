@@ -38,7 +38,6 @@ class  Firebase_Authentication: NSObject {
                         success(userInfoModel)
                     }
                     
-                    
                 })
             }
             else

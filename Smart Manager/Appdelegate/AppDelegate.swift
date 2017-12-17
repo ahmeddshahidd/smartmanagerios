@@ -65,7 +65,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if AppStateManager.sharedInstance.isUserLoggedIn(){
             //if you are calling your navigation controller then you can use this syntex
             
-            let HomeController = AppStoryboard.Main.instance.instantiateViewController(withIdentifier: "HomeController")
+            let HomeController = AppStoryboard.Main.instance.instantiateViewController(withIdentifier: "ProjectNavigationController")
 
             
             self.window?.rootViewController = nil;
