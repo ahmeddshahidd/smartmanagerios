@@ -24,7 +24,7 @@ class Firebase_Project: NSObject {
     {
         let projectDic: [String : Any] = [
             "title": title,
-            "creationDate": ParserHelper.getCurrentDate(),
+            "creationDate": ParserHelper.getCurrentDate(withThis: "yyyy-MM-dd"),
             "projectManager_id": AppStateManager.sharedInstance.loggedInUser.user_id,
             ]
         
@@ -48,7 +48,7 @@ class Firebase_Project: NSObject {
             "message": notificationText,
             "projectManager_id": AppStateManager.sharedInstance.loggedInUser.user_id,
             "project_id": Singleton.sharedInstance.currentProject.id,
-            "createDate" : ParserHelper.getCurrentDate()
+            "createDate" : ParserHelper.getCurrentDate(withThis: "yyyy-MM-dd")
             ]
         
         FirebaseConstantas.ref.child("notification").childByAutoId().setValue(notificationDic)
@@ -79,5 +79,31 @@ class Firebase_Project: NSObject {
             }
             Utility.hideLoader()
         })
+    }
+    
+    
+    func addTask(with taskTitle: String, success:@escaping DefaultBoolResultAPISuccesClosure,
+                 failure:@escaping DefaultAPIFailureClosure)
+    {
+        let taskDic: [String : Any] = [
+            "title": taskTitle,
+            "projectManager_id": AppStateManager.sharedInstance.loggedInUser.user_id,
+            "project_id": Singleton.sharedInstance.currentProject.id,
+            "createDate" : ParserHelper.getCurrentDate(withThis: "yyyy-MM-dd"),
+            "status" : "0" // 0 for in-progress, 1 for complete, 2 for hold
+        ]
+        
+        FirebaseConstantas.ref.child("tasks").childByAutoId().setValue(taskDic)
+        { (error, dbref) in
+            if error == nil
+            {
+                success(true)
+                
+            }
+            else
+            {
+                failure(error! as NSError)
+            }
+        }
     }
 }

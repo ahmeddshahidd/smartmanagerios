@@ -9,9 +9,10 @@
 import Foundation
 
 class ParserHelper {
-    static func getCurrentDate() -> String
+    static func getCurrentDate(withThis format: String) -> String
     {
-        let dateFormatter = DateFormatter()
-        return dateFormatter.string(from: Date())
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = format
+        return dateFormatterGet.string(from: Date())
     }
 }

@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D140AD91FFD0DA500ECAB3F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D140AD81FFD0DA500ECAB3F /* UIFont+Extension.swift */; };
+		0D140ADB1FFD0DF300ECAB3F /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D140ADA1FFD0DF300ECAB3F /* UITextField+Extension.swift */; };
 		0D2F63751FAADDCC00899FBB /* SenderMessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F63741FAADDCC00899FBB /* SenderMessagesCell.swift */; };
 		0D2F63771FAADDE700899FBB /* ReceiverMessegesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F63761FAADDE700899FBB /* ReceiverMessegesCell.swift */; };
 		0D2F637A1FAADE2000899FBB /* NotificationNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F63781FAADE2000899FBB /* NotificationNewCell.swift */; };
 		0D2F637B1FAADE2000899FBB /* NotificationNewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D2F63791FAADE2000899FBB /* NotificationNewCell.xib */; };
 		0D5602541FD52C32005F88E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D5602531FD52C32005F88E7 /* GoogleService-Info.plist */; };
+		0D6BB3BB1FE8F06A00B5E3B7 /* TasksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BB3BA1FE8F06A00B5E3B7 /* TasksController.swift */; };
+		0D6BB3BD1FE8F51700B5E3B7 /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D6BB3BC1FE8F51700B5E3B7 /* TaskCell.swift */; };
 		0D724A731FAAE60F00C1A36D /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D724A721FAAE60F00C1A36D /* SettingController.swift */; };
 		0D753AB51FA9849C004E38E7 /* AnnouncementController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D753AB41FA9849C004E38E7 /* AnnouncementController.swift */; };
 		0D753AC11FA98F05004E38E7 /* GroupChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D753AC01FA98F05004E38E7 /* GroupChatController.swift */; };
@@ -90,12 +94,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D140AD81FFD0DA500ECAB3F /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		0D140ADA1FFD0DF300ECAB3F /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		0D2F63741FAADDCC00899FBB /* SenderMessagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderMessagesCell.swift; sourceTree = "<group>"; };
 		0D2F63761FAADDE700899FBB /* ReceiverMessegesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverMessegesCell.swift; sourceTree = "<group>"; };
 		0D2F63781FAADE2000899FBB /* NotificationNewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNewCell.swift; sourceTree = "<group>"; };
 		0D2F63791FAADE2000899FBB /* NotificationNewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotificationNewCell.xib; sourceTree = "<group>"; };
 		0D5602531FD52C32005F88E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0D5602551FD52D5D005F88E7 /* Smart Manager.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Smart Manager.entitlements"; sourceTree = "<group>"; };
+		0D6BB3BA1FE8F06A00B5E3B7 /* TasksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksController.swift; sourceTree = "<group>"; };
+		0D6BB3BC1FE8F51700B5E3B7 /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
 		0D724A721FAAE60F00C1A36D /* SettingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		0D753AB41FA9849C004E38E7 /* AnnouncementController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnnouncementController.swift; sourceTree = "<group>"; };
 		0D753AC01FA98F05004E38E7 /* GroupChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupChatController.swift; sourceTree = "<group>"; };
@@ -207,6 +215,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D6BB3B91FE8F04E00B5E3B7 /* TasksController */ = {
+			isa = PBXGroup;
+			children = (
+				0D6BB3BA1FE8F06A00B5E3B7 /* TasksController.swift */,
+			);
+			path = TasksController;
+			sourceTree = "<group>";
+		};
+		0D6BB3BE1FE8F5DF00B5E3B7 /* TaskCell */ = {
+			isa = PBXGroup;
+			children = (
+				0D6BB3BC1FE8F51700B5E3B7 /* TaskCell.swift */,
+			);
+			path = TaskCell;
+			sourceTree = "<group>";
+		};
 		0D724A711FAAE5EF00C1A36D /* SettingController */ = {
 			isa = PBXGroup;
 			children = (
@@ -342,36 +366,13 @@
 		1A472B751E1A75B400F3087C /* CustomCell */ = {
 			isa = PBXGroup;
 			children = (
+				0D6BB3BE1FE8F5DF00B5E3B7 /* TaskCell */,
 				0D753AC21FA98F76004E38E7 /* Group Chat Cells */,
 				0D753AB61FA98532004E38E7 /* AnnouncementsCells */,
 				0D8A41671FA8377C00AB9ACC /* HomeCell */,
 				96A07B291E7D90C20032979E /* SideMenu Cell */,
-				1A472B761E1A75B400F3087C /* Rename1TableViewCell */,
-				1A472B771E1A75B400F3087C /* Rename2CollectionViewCell */,
-				1A472B781E1A75B400F3087C /* Rename2TableViewCell */,
 			);
 			path = CustomCell;
-			sourceTree = "<group>";
-		};
-		1A472B761E1A75B400F3087C /* Rename1TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Rename1TableViewCell;
-			sourceTree = "<group>";
-		};
-		1A472B771E1A75B400F3087C /* Rename2CollectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Rename2CollectionViewCell;
-			sourceTree = "<group>";
-		};
-		1A472B781E1A75B400F3087C /* Rename2TableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Rename2TableViewCell;
 			sourceTree = "<group>";
 		};
 		1A472B791E1A75B400F3087C /* CustomViews */ = {
@@ -415,7 +416,6 @@
 				1A472B811E1A75B400F3087C /* Constants */,
 				1A472B821E1A75B400F3087C /* Enums */,
 				1A472B831E1A75B400F3087C /* Extensions */,
-				1A472B841E1A75B400F3087C /* Localization */,
 				1A472B851E1A75B400F3087C /* UtilityFunctions */,
 			);
 			path = HelperClasses;
@@ -447,15 +447,10 @@
 				1A472BAA1E1A7A9C00F3087C /* UIView+Extention.swift */,
 				96942A9A1E7FF8EF00ACECF2 /* UIApplication+Extension.swift */,
 				0D8A416A1FA83C6400AB9ACC /* UIColor+Extension.swift */,
+				0D140AD81FFD0DA500ECAB3F /* UIFont+Extension.swift */,
+				0D140ADA1FFD0DF300ECAB3F /* UITextField+Extension.swift */,
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		1A472B841E1A75B400F3087C /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Localization;
 			sourceTree = "<group>";
 		};
 		1A472B851E1A75B400F3087C /* UtilityFunctions */ = {
@@ -531,6 +526,7 @@
 		1A472B8D1E1A75B400F3087C /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0D6BB3B91FE8F04E00B5E3B7 /* TasksController */,
 				0D724A711FAAE5EF00C1A36D /* SettingController */,
 				0D753ABF1FA98EA2004E38E7 /* Group Chat */,
 				0D753AB31FA98463004E38E7 /* Announcement */,
@@ -1002,6 +998,7 @@
 				96A07B2B1E7D91020032979E /* SideMenuTableViewCell.swift in Sources */,
 				0D753AB51FA9849C004E38E7 /* AnnouncementController.swift in Sources */,
 				964494A81E7D6B740096B74D /* PBJHexagonFlowLayout.m in Sources */,
+				0D6BB3BB1FE8F06A00B5E3B7 /* TasksController.swift in Sources */,
 				51D1F1E41FE677AF007AF6FE /* Firebase_Project.swift in Sources */,
 				1A472B971E1A770100F3087C /* SignInController.swift in Sources */,
 				5124B3C11FE67CF400213D2F /* ParserHelper.swift in Sources */,
@@ -1009,6 +1006,7 @@
 				0DC7BB291FDA725A002F7A7A /* Firebase_Authentication.swift in Sources */,
 				964494951E7AEE180096B74D /* EATextField.swift in Sources */,
 				C37F719C1E1D7A4C00A641B1 /* AuthenticationAPIManager.swift in Sources */,
+				0D140AD91FFD0DA500ECAB3F /* UIFont+Extension.swift in Sources */,
 				1A472B941E1A768500F3087C /* BaseController.swift in Sources */,
 				1A472BAB1E1A7A9C00F3087C /* UIButton+Extension.swift in Sources */,
 				0D2F63751FAADDCC00899FBB /* SenderMessagesCell.swift in Sources */,
@@ -1023,10 +1021,12 @@
 				0D2F63771FAADDE700899FBB /* ReceiverMessegesCell.swift in Sources */,
 				5926A9951E1E49BA007CCBD9 /* UIViewController+Extension.swift in Sources */,
 				96942A9B1E7FF8EF00ACECF2 /* UIApplication+Extension.swift in Sources */,
+				0D140ADB1FFD0DF300ECAB3F /* UITextField+Extension.swift in Sources */,
 				0D2F637A1FAADE2000899FBB /* NotificationNewCell.swift in Sources */,
 				964494981E7D4DED0096B74D /* EAHexagonButon.swift in Sources */,
 				0D753AC11FA98F05004E38E7 /* GroupChatController.swift in Sources */,
 				C37F719B1E1D7A4C00A641B1 /* APIManagerBase.swift in Sources */,
+				0D6BB3BD1FE8F51700B5E3B7 /* TaskCell.swift in Sources */,
 				1A67AFBB1E1B7D1C004FE57D /* BaseNavigationController.swift in Sources */,
 				1A472BAC1E1A7A9C00F3087C /* UIView+Extention.swift in Sources */,
 				1A472BA61E1A799F00F3087C /* Constants.swift in Sources */,

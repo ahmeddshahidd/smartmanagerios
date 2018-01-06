@@ -7,10 +7,7 @@
 //
 
 import UIKit
-//import Fabric
 import RealmSwift
-//import Crashlytics
-//import CocoaLumberjack
 import IQKeyboardManagerSwift
 import Firebase
 

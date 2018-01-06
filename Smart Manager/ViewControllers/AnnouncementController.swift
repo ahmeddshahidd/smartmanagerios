@@ -51,6 +51,8 @@ class AnnouncementController: BaseController {
             }, failure: {(failure) in
                 Utility.hideLoader()
             })
+            
+        
         }
     }
     
@@ -58,7 +60,20 @@ class AnnouncementController: BaseController {
     {
         let project_id = Singleton.sharedInstance.currentProject.id
         Utility.showLoader()
-        self.ref_notifications.queryOrdered(byChild: project_id).observe(.value, with: { snapshot in
+//        self.ref_notifications.queryOrdered(byChild: project_id).observe(.value, with: { snapshot in
+//            var newItems: [Notification] = []
+//
+//            for item in snapshot.children {
+//                let notification = Notification(snapshot: item as! DataSnapshot)
+//                newItems.append(notification)
+//            }
+//
+//            self.notificationArray = newItems
+//            self.announcementTableView.reloadData()
+//            Utility.hideLoader()
+//        })
+        
+        self.ref_notifications.queryOrdered(byChild: "project_id").queryEqual(toValue: project_id).observe(.value, with: { snapshot in
             var newItems: [Notification] = []
             
             for item in snapshot.children {

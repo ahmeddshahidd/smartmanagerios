@@ -19,7 +19,6 @@ class User: Object {
     dynamic var type = ""
     dynamic var user_id = ""
     
-    
     override static func primaryKey() -> String? {
         return "user_id"
     }
