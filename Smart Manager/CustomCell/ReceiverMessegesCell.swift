@@ -17,23 +17,12 @@ class ReceiverMessegesCell: UITableViewCell {
         // Initialization code
     }
     
-    func BindData()
+    func BindData(messageObj: Message)
     {
-        receiverMessageLabel.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-        messagesDateTime.text = "10-07-17   19:05"
+        receiverMessageLabel.text = messageObj.message
+        messagesDateTime.text = messageObj.createDate
     }
     
-    func addingSecrete(messageText: String) -> String
-    {
-        if(messageText.characters.count >= 41)
-        {
-            return messageText
-        }
-        else
-        {
-            return messageText// + "\n"
-        }
-    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         

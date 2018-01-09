@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D140AD91FFD0DA500ECAB3F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D140AD81FFD0DA500ECAB3F /* UIFont+Extension.swift */; };
 		0D140ADB1FFD0DF300ECAB3F /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D140ADA1FFD0DF300ECAB3F /* UITextField+Extension.swift */; };
+		0D28DA5920048C810090F275 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D28DA5820048C810090F275 /* Message.swift */; };
 		0D2F63751FAADDCC00899FBB /* SenderMessagesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F63741FAADDCC00899FBB /* SenderMessagesCell.swift */; };
 		0D2F63771FAADDE700899FBB /* ReceiverMessegesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F63761FAADDE700899FBB /* ReceiverMessegesCell.swift */; };
 		0D2F637A1FAADE2000899FBB /* NotificationNewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2F63781FAADE2000899FBB /* NotificationNewCell.swift */; };
@@ -96,6 +97,7 @@
 /* Begin PBXFileReference section */
 		0D140AD81FFD0DA500ECAB3F /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		0D140ADA1FFD0DF300ECAB3F /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		0D28DA5820048C810090F275 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0D2F63741FAADDCC00899FBB /* SenderMessagesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SenderMessagesCell.swift; sourceTree = "<group>"; };
 		0D2F63761FAADDE700899FBB /* ReceiverMessegesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiverMessegesCell.swift; sourceTree = "<group>"; };
 		0D2F63781FAADE2000899FBB /* NotificationNewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationNewCell.swift; sourceTree = "<group>"; };
@@ -675,6 +677,7 @@
 				C37F71A01E1D7B8100A641B1 /* User.swift */,
 				5124B3C21FE6879E00213D2F /* Project.swift */,
 				5124B3C41FE69A1E00213D2F /* Notification.swift */,
+				0D28DA5820048C810090F275 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -997,6 +1000,7 @@
 				1A472BA41E1A799000F3087C /* AppConstants.swift in Sources */,
 				96A07B2B1E7D91020032979E /* SideMenuTableViewCell.swift in Sources */,
 				0D753AB51FA9849C004E38E7 /* AnnouncementController.swift in Sources */,
+				0D28DA5920048C810090F275 /* Message.swift in Sources */,
 				964494A81E7D6B740096B74D /* PBJHexagonFlowLayout.m in Sources */,
 				0D6BB3BB1FE8F06A00B5E3B7 /* TasksController.swift in Sources */,
 				51D1F1E41FE677AF007AF6FE /* Firebase_Project.swift in Sources */,

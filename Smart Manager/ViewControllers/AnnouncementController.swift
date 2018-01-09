@@ -74,6 +74,7 @@ class AnnouncementController: BaseController {
 //        })
         
         self.ref_notifications.queryOrdered(byChild: "project_id").queryEqual(toValue: project_id).observe(.value, with: { snapshot in
+            
             var newItems: [Notification] = []
             
             for item in snapshot.children {

@@ -64,18 +64,6 @@ class HomeController: BaseController {
     {
         let user_id = AppStateManager.sharedInstance.loggedInUser.user_id
         Utility.showLoader()
-//        self.ref.queryOrdered(byChild: user_id).observe(.value, with: { snapshot in
-//            var newItems: [Project] = []
-//
-//            for item in snapshot.children {
-//                let projectItem = Project(snapshot: item as! DataSnapshot)
-//                newItems.append(projectItem)
-//            }
-//
-//            self.projectsArray = newItems
-//            self.projectsTableView.reloadData()
-//            Utility.hideLoader()
-//        })
         
         self.ref.queryOrdered(byChild: "projectManager_id").queryEqual(toValue: user_id).observe(.value
             , with: { snapshot in

@@ -106,4 +106,29 @@ class Firebase_Project: NSObject {
             }
         }
     }
+    
+    func addMessageToGroup(with textMessage: String, success:@escaping DefaultBoolResultAPISuccesClosure,
+                 failure:@escaping DefaultAPIFailureClosure)
+    {
+        let taskDic: [String : Any] = [
+            "message": textMessage,
+            "sender_id" : AppStateManager.sharedInstance.loggedInUser.user_id,
+            "senderName" : AppStateManager.sharedInstance.loggedInUser.name,
+            "project_id": Singleton.sharedInstance.currentProject.id,
+            "createDate" : ParserHelper.getCurrentDate(withThis: "yyyy-MM-dd HH:mm:ss")
+        ]
+        
+        FirebaseConstantas.ref.child("messages").childByAutoId().setValue(taskDic)
+        { (error, dbref) in
+            if error == nil
+            {
+                success(true)
+                
+            }
+            else
+            {
+                failure(error! as NSError)
+            }
+        }
+    }
 }

@@ -32,12 +32,12 @@ class SenderMessagesCell: UITableViewCell {
         super.layoutSubviews()
     }
     
-    func BindData()
+    func BindData(messageObj: Message)
     {
-        messageLabel.text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book"
-        messageDate.text = "10-07-17   19:05"
-        //messengerImage.sd_setImage(with: URL(string: message.profileImage), placeholderImage: UIImage(named: Constants.PLACEHOLDER_IMAGE))
+        messageLabel.text = messageObj.message
+        messageDate.text = messageObj.createDate
     }
+    
     func configView() {
         self.bgView.layer.masksToBounds = false
         self.bgView.layer.shadowColor = AppConstants.THEME_COLOR_LIGHT_GRAY.cgColor

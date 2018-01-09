@@ -335,27 +335,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderMessagesCell" rowHeight="44" id="CmM-To-yVX" customClass="SenderMessagesCell" customModule="Smart_Manager" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SenderMessagesCell" rowHeight="69" id="CmM-To-yVX" customClass="SenderMessagesCell" customModule="Smart_Manager" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CmM-To-yVX" id="a2h-lG-fwv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="SQ8-nG-FRt">
-                                                    <rect key="frame" x="19" y="14" width="50" height="50"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="50" id="222-41-Wxf"/>
-                                                        <constraint firstAttribute="width" secondItem="SQ8-nG-FRt" secondAttribute="height" multiplier="1:1" id="6Ha-rq-y7E"/>
-                                                    </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                            <real key="value" value="0.0"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
-                                                </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zKx-sp-9wP">
-                                                    <rect key="frame" x="89.5" y="11" width="204.5" height="14"/>
+                                                    <rect key="frame" x="4" y="11" width="225" height="39"/>
                                                     <color key="backgroundColor" red="0.96462148430000005" green="0.96475988629999998" blue="0.96459132430000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -364,7 +352,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DI9-9w-Vyy">
-                                                    <rect key="frame" x="100" y="11.5" width="184" height="13"/>
+                                                    <rect key="frame" x="16" y="13" width="202" height="35.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -375,7 +363,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2:43 PM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgS-ab-L5k">
-                                                    <rect key="frame" x="103" y="33" width="238" height="8"/>
+                                                    <rect key="frame" x="19" y="58" width="256" height="8"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="8" id="SaS-Zj-nRb"/>
                                                     </constraints>
@@ -385,31 +373,27 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="zKx-sp-9wP" firstAttribute="leading" secondItem="a2h-lG-fwv" secondAttribute="leading" constant="4" id="FFO-2I-P59"/>
                                                 <constraint firstItem="zKx-sp-9wP" firstAttribute="top" secondItem="a2h-lG-fwv" secondAttribute="topMargin" id="FHB-e7-KG5"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="zKx-sp-9wP" secondAttribute="bottom" constant="8" id="IVr-qF-2eb"/>
-                                                <constraint firstItem="zKx-sp-9wP" firstAttribute="leading" secondItem="SQ8-nG-FRt" secondAttribute="trailing" constant="21" id="Ith-hz-USW"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="zKx-sp-9wP" secondAttribute="trailing" constant="66" id="Iub-rj-hcz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="zKx-sp-9wP" secondAttribute="trailing" constant="131" id="Iub-rj-hcz"/>
                                                 <constraint firstItem="DI9-9w-Vyy" firstAttribute="width" secondItem="zKx-sp-9wP" secondAttribute="width" multiplier="0.9" id="JUK-CH-Dbt"/>
                                                 <constraint firstItem="DI9-9w-Vyy" firstAttribute="centerX" secondItem="zKx-sp-9wP" secondAttribute="centerX" id="RFz-sd-9TK"/>
                                                 <constraint firstItem="hgS-ab-L5k" firstAttribute="width" secondItem="zKx-sp-9wP" secondAttribute="width" multiplier="0.9" constant="54.349999999999994" id="UUZ-hp-HOh"/>
-                                                <constraint firstItem="SQ8-nG-FRt" firstAttribute="top" secondItem="a2h-lG-fwv" secondAttribute="topMargin" constant="3" id="Wqw-Fs-9Wk"/>
-                                                <constraint firstItem="SQ8-nG-FRt" firstAttribute="leading" secondItem="a2h-lG-fwv" secondAttribute="leadingMargin" constant="4" id="X3f-1d-edS"/>
                                                 <constraint firstItem="hgS-ab-L5k" firstAttribute="centerX" secondItem="zKx-sp-9wP" secondAttribute="centerX" constant="30" id="fjt-yO-m7z"/>
                                                 <constraint firstItem="hgS-ab-L5k" firstAttribute="top" secondItem="zKx-sp-9wP" secondAttribute="bottom" constant="8" id="ggS-WQ-oxz"/>
                                                 <constraint firstItem="DI9-9w-Vyy" firstAttribute="centerY" secondItem="zKx-sp-9wP" secondAttribute="centerY" id="h4c-Pr-Rse"/>
                                                 <constraint firstItem="DI9-9w-Vyy" firstAttribute="height" secondItem="zKx-sp-9wP" secondAttribute="height" multiplier="0.9" id="oBA-56-N4r"/>
-                                                <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="SQ8-nG-FRt" secondAttribute="bottom" priority="750" constant="4" id="ydn-DM-eL5"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="bgView" destination="zKx-sp-9wP" id="t2s-wm-aO2"/>
                                             <outlet property="messageDate" destination="hgS-ab-L5k" id="m0e-Q9-ldZ"/>
                                             <outlet property="messageLabel" destination="DI9-9w-Vyy" id="CDX-xS-Kjh"/>
-                                            <outlet property="messengerImage" destination="SQ8-nG-FRt" id="p3M-E8-x82"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReceiverMessegesCell" rowHeight="44" id="v4I-4p-bIR" customClass="ReceiverMessegesCell" customModule="Smart_Manager" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="72" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="97" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v4I-4p-bIR" id="YoZ-Gq-6vk">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -502,6 +486,9 @@
                                         <rect key="frame" x="341" y="19" width="26" height="22"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="send"/>
+                                        <connections>
+                                            <action selector="sendBtnPress:" destination="mru-R1-rHU" eventType="touchUpInside" id="MMh-O5-p2L"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -512,6 +499,7 @@
                     <navigationItem key="navigationItem" title="Chat" id="EsZ-To-NbQ"/>
                     <connections>
                         <outlet property="groupChatTableView" destination="MEj-9x-Lnh" id="d3k-vv-Qgg"/>
+                        <outlet property="messageTextField" destination="YaN-5j-bEp" id="eov-LE-7J7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iFR-VB-4T2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -883,7 +871,6 @@
         <image name="announcement" width="24" height="22"/>
         <image name="cards" width="24" height="21"/>
         <image name="groupChat" width="24" height="20"/>
-        <image name="logo" width="145" height="167"/>
         <image name="send" width="26" height="22"/>
         <image name="settigns_icon" width="28" height="28"/>
     </resources>
